@@ -1,0 +1,33 @@
+body, html {margin: 0 auto; padding: 0; font: 20px Arial;}
+
+.center {
+   text-align: center;
+}
+
+#search {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#middle {
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	top: 50%;
+	margin-top: -100px;
+}
+
+input, textarea, select {font: 20px Arial; border: 1px solid #CCCCCC; padding: 5px; box-shadow:inset 0 0 10px #CCCCCC; -moz-box-shadow:inset 0 0 10px #CCCCCC;}

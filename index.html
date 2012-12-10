@@ -1,0 +1,63 @@
+<?php
+session_start();
+ob_start();
+require_once "config.php";
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Askey - ASCII Character Search Engine</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type='text/javascript' src='jquery.autocomplete.js'></script>
+<link rel="stylesheet" type="text/css" href="jquery.autocomplete.css" />
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" /> 
+
+<script type="text/javascript">
+$().ready(function() {
+	$("#find").autocomplete("get_results.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="middle">
+<div id="search">
+<h1>Askey</h1>
+  <form name="search" method="get" action="processform.php" autocomplete="off">
+  <input type="text" name="find" id="find" />
+  <input type="hidden" name="field" value="keywords"> 
+  <input type="hidden" name="searching" value="yes" />
+  <input type="submit" name="search" value="Go!" />
+  </form>
+<br /><br />
+<em style="font-size: 12px;">An ASCII character search engine for developers who hate reading charts</em>
+</div>
+</div>
+
+
+  
+</body>
+
+</html>
+

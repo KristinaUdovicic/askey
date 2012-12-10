@@ -1,0 +1,40 @@
+.ac_results {
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/*width: 100%;*/
+	font: menu;
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #b3b3b3;
+}
+
+.ac_over {
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+}
